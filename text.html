@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Countdown Timer</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fruit Burst</title>
+        <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <style>
+            .font-family{
+                font-family: 'Lato', sans-serif;
+            }
+        </style>
+    </head>
 <body>
-  <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-    <div class="flex flex-col">
-      <span class="countdown font-mono text-5xl">
-        <span style="--value:0;" id="days"></span>
-      </span>
-      days
+    <div class="hero mx-auto max-w-sm lg:max-w-screen-xl min-h-fit" style="background-image: url(./images/banner1.png);">
+        <div class="hero-overlay bg-opacity-60 "></div>
+           <div class="hero-content text-center text-neutral-content max-h-fit flex flex-col py-4 lg:py-20 text-white" >
+               <!-- <div class=" px-12 mt-10 pb-7 lg:px-96 lg:mt-20 lg:pb-44 "  style=" border: 2px solid white;"> -->
+    <h1 class="mb-4 text-2xl lg:mb-5 lg:text-5xl font-extrabold  ">Meet the team section</h1>
+    <p class=" mb-2 lg:mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin literature from 45 BC, making it over 2000 years old.</p>
+        <div class="card-container grid grid-col-1 lg:grid-cols-4">
+    
+              <div class="card  max-w-fit ">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member1.png" alt="" class="rounded-full" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-extrabold">Awlad Hossain</h2>
+                  <p>Fruits Expert</p>
+                  <div class="flex gap-2">
+                    <img class="w-6 h-6 rounded-full bg-white" src="./images/facebook-circular-logo.png" alt="">
+                    <img class="w-6 h-6 rounded-full bg-white" src="./images/twitter.png" alt="">
+                    <img class="w-6 h-6 rounded-full bg-white" src="./images/linkedin.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="card max-w-fit  ">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member2.png" alt="" class="rounded-full" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-extrabold">Safia Chowdhury</h2>
+                  <p>Fruits Expert</p>
+                  <div class="flex gap-2">
+                    <img class="w-6 h-6 rounded-full bg-white cursor-pointer" src="./images/facebook-circular-logo.png" alt="">
+                    <img class="w-6 h-6 rounded-full bg-white cursor-pointer" src="./images/twitter.png" alt="">
+                    <img class="w-6 h-6 rounded-full bg-white cursor-pointer" src="./images/linkedin.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="card max-w-fit ">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member3.png" alt="" class="rounded-full" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-extrabold">Rokib Hossain</h2>
+                  <p>Fruits Expert</p>
+                  <div class="flex gap-2">
+                    <img class="w-6 h-6 rounded-full bg-white" src="./images/facebook-circular-logo.png" alt="">
+                    <img class="w-6 h-6 rounded-full bg-white" src="./images/twitter.png" alt="">
+                    <img class="w-6 h-6 rounded-full bg-white" src="./images/linkedin.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="card max-w-fit  ">
+                <figure class="px-10 pt-10">
+                  <img src="./images/member4.png" alt="" class="rounded-full" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title font-extrabold">Chaity</h2>
+                  <p>Fruits Expert</p>
+                  <div class="flex gap-2">
+                    <img class="w-6 h-6 rounded-full bg-white" src="./images/facebook-circular-logo.png" alt="">
+                    <img class="w-6 h-6 rounded-full bg-white" src="./images/twitter.png" alt="">
+                    <img class="w-6 h-6 rounded-full bg-white" src="./images/linkedin.png" alt="">
+                  </div>
+                </div>
+              </div>
+        </div>
+      
     </div>
-    <div class="flex flex-col">
-      <span class="countdown font-mono text-5xl">
-        <span style="--value:0;" id="hours"></span>
-      </span>
-      hours
+    
     </div>
-    <div class="flex flex-col">
-      <span class="countdown font-mono text-5xl">
-        <span style="--value:0;" id="minutes"></span>
-      </span>
-      min
-    </div>
-    <div class="flex flex-col">
-      <span class="countdown font-mono text-5xl">
-        <span style="--value:0;" id="seconds"></span>
-      </span>
-      sec
-    </div>
-  </div>
+   
 
-  <!-- The JavaScript code will be added here -->
-  <!-- The JavaScript code will be added here -->
-<script>
-    function updateCountdown() {
-      const targetDate = new Date('2023-12-31').getTime(); // Replace with your target date
-      const countdownInterval = setInterval(() => {
-        const now = new Date().getTime();
-        const timeDifference = targetDate - now;
-  
-        if (timeDifference > 0) {
-          const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-          const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-          const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-  
-          document.getElementById('days').textContent = days.toString().padStart(2, '0');
-          document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-          document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-          document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        } else {
-          clearInterval(countdownInterval);
-          document.getElementById('days').textContent = '00';
-          document.getElementById('hours').textContent = '00';
-          document.getElementById('minutes').textContent = '00';
-          document.getElementById('seconds').textContent = '00';
-        }
-      }, 1000);
-    }
-  
-    document.addEventListener('DOMContentLoaded', updateCountdown);
-  </script>
+    
   
 </body>
 </html>
